@@ -4,6 +4,11 @@
 # playground
 # https://ghostty.zerebos.com/
 
+# macOS
+# https://zenn.dev/kawarimidoll/articles/5f219b4409424b
+macos-icon = xray
+macos-option-as-alt = true
+
 # Font
 font-family = "Hack Nerd Font"
 font-size = 14
