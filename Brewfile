@@ -15,7 +15,7 @@ brew "stow"
 # Fonts
 # ----------------------------------------------------------------
 
-tap "homebrew/cask-fonts"
+# tap "homebrew/cask-fonts" 
 
 # Nerd Font
 cask "font-hack-nerd-font"
