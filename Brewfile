@@ -33,6 +33,9 @@ brew "starship"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature https://zellij.dev/
 brew "zellij"
 
+# Fish shell like syntax highlighting for zsh https://github.com/zsh-users/zsh-syntax-highlighting
+brew "zsh-syntax-highlighting"
+
 # ----------------------------------------------------------------
 # Shell Development Environments
 # ----------------------------------------------------------------
