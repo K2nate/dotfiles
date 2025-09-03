@@ -1,0 +1,14 @@
+# official docs
+# https://ghostty.org/docs/config
+#
+# playground
+# https://ghostty.zerebos.com/
+
+# Font
+font-family = "Hack Nerd Font"
+font-size = 14
+# turn off ligature https://ghostty.org/docs/config/reference#font-feature
+font-feature = -calt, -liga, -dlig
+
+# keybindings
+keybind = shift+enter=text:\n
