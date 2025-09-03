@@ -1,3 +1,16 @@
+OS_NAME="$(uname -s)"
+
+# Homebrew
+homebrew() {
+  if [[ "$OS_NAME" == "Darwin" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+  if [[ "$OS_NAME" == "Linux" ]]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  fi
+}
+homebrew
+
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 # shellcheck disable=SC1090
