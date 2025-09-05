@@ -66,3 +66,12 @@ backup() {
     
     cp -p "$file" "$backup_file" && echo "Backup created: $backup_file"
 }
+
+# fzf history
+function fzf-history() {
+    BUFFER=$(history -n -r 1 | fzf --query "$LBUFFER" --reverse)
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N fzf-history
+bindkey '^r' fzf-history
