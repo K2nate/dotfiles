@@ -50,6 +50,9 @@ brew "shellcheck"
 # Brew
 # ----------------------------------------------------------------
 
+# Cat(1) clone with syntax highlighting and Git integration. https://github.com/sharkdp/bat
+brew "bat"
+
 # Distributed revision control system. https://git-scm.com
 brew "git"
 
