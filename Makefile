@@ -6,3 +6,7 @@ homebrew:
 .PHONY: macos
 macos:
 	bash ./scripts/setup-macos.sh
+
+.PHONY: link
+link:
+	stow --verbose --restow --adopt --target="$$HOME" home
