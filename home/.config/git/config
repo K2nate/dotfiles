@@ -1,3 +1,7 @@
 [user]
 name = K2nate
 email = k2nate.dev@gmail.com
+
+[ghq]
+user = K2nate
+root = ~/src
