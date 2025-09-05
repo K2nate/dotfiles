@@ -53,6 +53,9 @@ brew "shellcheck"
 # Cat(1) clone with syntax highlighting and Git integration. https://github.com/sharkdp/bat
 brew "bat"
 
+# Modern replacement for ls. https://github.com/eza-community/eza
+brew "eza"
+
 # Distributed revision control system. https://git-scm.com
 brew "git"
 
