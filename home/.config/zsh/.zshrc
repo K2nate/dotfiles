@@ -9,3 +9,13 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 # starship
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# Source alias files
+for file in $XDG_CONFIG_HOME/zsh/aliases/*.zsh; do
+    [[ -r "$file" ]] && source "$file"
+done
+
+# Source function files
+for file in $XDG_CONFIG_HOME/zsh/functions/*.zsh; do
+    [[ -r "$file" ]] && source "$file"
+done
