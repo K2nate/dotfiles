@@ -96,8 +96,8 @@ gpr() {
     fi
 }
 
-# ghq fuzzy finder
-function ghq-fzf() {
+# fzf ghq
+function fzf-ghq() {
   local src=$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")
   if [ -n "$src" ]; then
     BUFFER="cd $(ghq root)/$src"
@@ -105,5 +105,5 @@ function ghq-fzf() {
   fi
   zle -R -c
 }
-zle -N ghq-fzf
-bindkey '^g' ghq-fzf
+zle -N fzf-ghq
+bindkey '^g' fzf-ghq
