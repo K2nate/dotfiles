@@ -74,6 +74,9 @@ brew "grep"
 # Lightweight and flexible command-line JSON processor https://stedolan.github.io/jq/
 brew "jq"
 
+# Search tool like grep and The Silver Searcher https://github.com/BurntSushi/ripgrep
+brew "ripgrep"
+
 # ----------------------------------------------------------------
 # Cask
 # ----------------------------------------------------------------
