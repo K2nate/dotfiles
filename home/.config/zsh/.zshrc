@@ -10,6 +10,9 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 eval "$(starship init zsh)"
 
+# Config
+source "$XDG_CONFIG_HOME/zsh/scripts/config.zsh"
+
 # Source alias files
 for file in $XDG_CONFIG_HOME/zsh/aliases/*.zsh; do
     [[ -r "$file" ]] && source "$file"
