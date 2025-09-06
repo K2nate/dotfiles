@@ -91,14 +91,7 @@ install_homebrew() {
   fi
 
   if [[ "$OS_NAME" == "Darwin" ]]; then
-    # Check architecture and use appropriate Homebrew path
-    if [[ "$(uname -m)" == "arm64" ]]; then
-      # Apple Silicon (M1/M2/M3)
-      eval "$(/opt/homebrew/bin/brew shellenv)"
-    else
-      # Intel Mac
-      eval "$(/usr/local/bin/brew shellenv)"
-    fi
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 
   if [[ "${OS_NAME}" == "Linux" ]]; then
