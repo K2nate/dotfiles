@@ -50,6 +50,9 @@ brew "shellcheck"
 # Brew
 # ----------------------------------------------------------------
 
+# Dev Tools Management  https://mise.jdx.dev/
+brew "mise"
+
 # Cat(1) clone with syntax highlighting and Git integration. https://github.com/sharkdp/bat
 brew "bat"
 

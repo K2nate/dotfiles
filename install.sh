@@ -134,6 +134,21 @@ symlink_files() {
 }
 
 # ----------------------------------------------------------------
+# Install dev tools via mise
+# ----------------------------------------------------------------
+install_dev_tools() {
+  echo -e "🛠️  Installing dev tools via mise"
+
+  # Check if mise is installed
+  if ! command -v mise >/dev/null 2>&1; then
+    echo "- mise is not installed, please install mise via Brewfile"
+    return
+  fi
+
+  mise install  
+}
+
+# ----------------------------------------------------------------
 # Install
 # ----------------------------------------------------------------
 echo -e "${yellow}"
@@ -155,6 +170,7 @@ if [[ "$OS_NAME" == "Darwin" ]]; then
   install_xcode_cli_tools
   install_homebrew
   symlink_files
+  install_dev_tools
 #   open_config_apps
 fi
 
@@ -162,6 +178,7 @@ if [[ "$OS_NAME" == "Linux" ]]; then
   install_zsh
   install_homebrew
   symlink_files
+  install_dev_tools
 fi
 
 echo -e "${yellow}"
