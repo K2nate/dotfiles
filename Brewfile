@@ -107,3 +107,6 @@ cask "visual-studio-code"
 
 # Video communication and virtual meeting platform https://www.zoom.us/
 cask "zoom"
+
+# Code editor designed for high-performance collaboration with humans and AI. https://zed.dev/
+cask "zed"
