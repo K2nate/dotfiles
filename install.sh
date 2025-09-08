@@ -145,7 +145,7 @@ install_dev_tools() {
     return
   fi
 
-  mise install  
+  mise install
 }
 
 # ----------------------------------------------------------------
