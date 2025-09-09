@@ -104,6 +104,7 @@ install_homebrew() {
     ghq get K2nate/dotfiles && \
     DOTFILES_DIR=$(ghq root)/$(ghq list | grep K2nate/dotfiles) && \
     cd "$DOTFILES_DIR" && \
+    echo -e "🍺 Installing packages from Brewfile"
     brew bundle \
     --verbose \
     --cleanup \
