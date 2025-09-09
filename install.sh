@@ -18,7 +18,6 @@ set -Ceuo pipefail
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OS_NAME="$(uname -s)"
 
 # ----------------------------------------------------------------
@@ -99,10 +98,16 @@ install_homebrew() {
   fi
 
   # Bundle packages from Brewfile (common for macOS & Linux)
-  brew bundle \
-  --verbose \
-  --cleanup \
-  --file="$SCRIPT_DIR/Brewfile"
+  # checkout K2nate/dotfiles via ghq to exec brew bundle
+  brew install ghq && \
+    export GHQ_ROOT="$HOME/src" && \
+    ghq get K2nate/dotfiles && \
+    DOTFILES_DIR=$(ghq root)/$(ghq list | grep K2nate/dotfiles) && \
+    cd "$DOTFILES_DIR" && \
+    brew bundle \
+    --verbose \
+    --cleanup \
+    --file="$DOTFILES_DIR/Brewfile"
 
   brew cleanup --verbose
 }
