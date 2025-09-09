@@ -60,7 +60,7 @@ bash ./scripts/setup-macos.sh
 
 2. **Brewfile**: Declarative package list for Homebrew
    - System utilities (stow, bat, eza, ripgrep, etc.)
-   - Development tools (mise, gh, git)
+   - Development tools (mise, gh, git, etc.)
    - GUI applications (Ghostty, Arc, VSCode, Zed, etc.)
    - Fonts (Hack Nerd Font)
 
@@ -79,7 +79,7 @@ bash ./scripts/setup-macos.sh
 ### Development Tools
 - **mise** manages language versions (replaces asdf/nvm/rbenv)
 - Tools are installed via `mise install` after Homebrew setup
-- Configuration would be in `.mise.toml` or `.tool-versions` (not present yet)
+- Configuration would be in `home/.config/mise/config.toml`
 
 ## Important Notes
 
