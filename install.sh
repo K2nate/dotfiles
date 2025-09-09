@@ -98,7 +98,7 @@ install_homebrew() {
   fi
 
   # Bundle packages from Brewfile (common for macOS & Linux)
-  # checkout K2nate/dotfiles via ghq to exec brew bundle
+  # clone K2nate/dotfiles via ghq to exec brew bundle
   brew install ghq && \
     export GHQ_ROOT="$HOME/src" && \
     ghq get K2nate/dotfiles && \
