@@ -1,8 +1,8 @@
 [tools]
 node = '24'
-'npm:pnpm' = '10.15.1'
 deno = '2.4.5'
 bun = '1.2.21'
+'npm:pnpm' = '10.15.1'
 python = '3.13'
 go = '1.25.1'
 rust = '1.89.0'
