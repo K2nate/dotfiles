@@ -84,6 +84,9 @@ brew "ripgrep"
 # Cask
 # ----------------------------------------------------------------
 
+# FreeMacSoft AppCleaner https://freemacsoft.net/appcleaner/
+cask "appcleaner"
+
 # Web browser https://arc.net/
 cask "arc"
 
