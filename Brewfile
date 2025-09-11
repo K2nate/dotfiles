@@ -93,6 +93,12 @@ cask "arc"
 # Anthropic's official Claude AI desktop app https://www.anthropic.com/
 cask "claude"
 
+# Knowledge base that works on top of a local folder of plain text Markdown files https://obsidian.md/
+cask "obsidian"
+
+# Voice and text chat software. https://discord.com
+cask "discord"
+
 # Replacement for Docker Desktop https://orbstack.dev/
 cask "orbstack"
 
