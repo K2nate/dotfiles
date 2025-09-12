@@ -93,6 +93,9 @@ cask "arc"
 # Anthropic's official Claude AI desktop app https://www.anthropic.com/
 cask "claude"
 
+# Client for the Google Drive storage service https://www.google.com/drive/
+cask "google-drive"
+
 # Knowledge base that works on top of a local folder of plain text Markdown files https://obsidian.md/
 cask "obsidian"
 
