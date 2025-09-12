@@ -1,7 +1,17 @@
 [user]
 name = K2nate
 email = 52069441+K2nate@users.noreply.github.com
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJkRzTH5wj2In1J8C3YhmUI4F69o04+Ov8C3v66LdlVT
 
 [ghq]
 user = K2nate
 root = ~/src
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
