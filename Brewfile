@@ -40,18 +40,15 @@ brew "zsh-syntax-highlighting"
 # Shell Development Environments
 # ----------------------------------------------------------------
 
-# Autoformat shell script source code https://github.com/mvdan/sh
-brew "shfmt"
-
 # Static analysis and lint tool, for (ba)sh scripts https://www.shellcheck.net/
 brew "shellcheck"
+
+# Autoformat shell script source code https://github.com/mvdan/sh
+brew "shfmt"
 
 # ----------------------------------------------------------------
 # Brew
 # ----------------------------------------------------------------
-
-# Dev Tools Management  https://mise.jdx.dev/
-brew "mise"
 
 # Cat(1) clone with syntax highlighting and Git integration. https://github.com/sharkdp/bat
 brew "bat"
@@ -59,23 +56,26 @@ brew "bat"
 # Modern replacement for ls. https://github.com/eza-community/eza
 brew "eza"
 
-# Distributed revision control system. https://git-scm.com
-brew "git"
+# Fuzzy finder for the command-line https://github.com/junegunn/fzf
+brew "fzf"
 
 # GitHub command-line tool. https://github.com/cli/cli
 brew "gh"
 
-# Fuzzy finder for the command-line https://github.com/junegunn/fzf
-brew "fzf"
-
 # GitHub repository manager. https://github.com/x-motemen/ghq
 brew "ghq"
+
+# Distributed revision control system. https://git-scm.com
+brew "git"
 
 # GNU grep, egrep and fgrep https://www.gnu.org/software/grep/
 brew "grep"
 
 # Lightweight and flexible command-line JSON processor https://stedolan.github.io/jq/
 brew "jq"
+
+# Dev Tools Management  https://mise.jdx.dev/
+brew "mise"
 
 # Search tool like grep and The Silver Searcher https://github.com/BurntSushi/ripgrep
 brew "ripgrep"
@@ -93,14 +93,17 @@ cask "arc"
 # Anthropic's official Claude AI desktop app https://www.anthropic.com/
 cask "claude"
 
+# Voice and text chat software. https://discord.com
+cask "discord"
+
 # Client for the Google Drive storage service https://www.google.com/drive/
 cask "google-drive"
 
+# Keyboard customizer. https://pqrs.org/osx/karabiner
+cask "karabiner-elements"
+
 # Knowledge base that works on top of a local folder of plain text Markdown files https://obsidian.md/
 cask "obsidian"
-
-# Voice and text chat software. https://discord.com
-cask "discord"
 
 # Replacement for Docker Desktop https://orbstack.dev/
 cask "orbstack"
@@ -111,14 +114,11 @@ cask "raycast"
 # Team communication and collaboration software. https://slack.com
 cask "slack"
 
-# Keyboard customizer. https://pqrs.org/osx/karabiner
-cask "karabiner-elements"
-
 # Open-source code editor. https://code.visualstudio.com
 cask "visual-studio-code"
 
-# Video communication and virtual meeting platform https://www.zoom.us/
-cask "zoom"
-
 # Code editor designed for high-performance collaboration with humans and AI. https://zed.dev/
 cask "zed"
+
+# Video communication and virtual meeting platform https://www.zoom.us/
+cask "zoom"
