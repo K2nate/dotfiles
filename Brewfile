@@ -84,6 +84,15 @@ brew "ripgrep"
 # Cask
 # ----------------------------------------------------------------
 
+# Password manager that keeps all passwords secure behind one password. https://1password.com
+cask "1Password"
+
+# Command-line helper for the 1Password password manager https://developer.1password.com/docs/cli
+cask "1password-cli"
+
+# A Real Design-first API Development Platform https://apidog.com/
+cask "apidog"
+
 # FreeMacSoft AppCleaner https://freemacsoft.net/appcleaner/
 cask "appcleaner"
 
