@@ -111,6 +111,9 @@ cask "google-drive"
 # Keyboard customizer. https://pqrs.org/osx/karabiner
 cask "karabiner-elements"
 
+# a purpose-built tool for planning and building products https://linear.app/homepage
+cask "linear-linear"
+
 # Knowledge base that works on top of a local folder of plain text Markdown files https://obsidian.md/
 cask "obsidian"
 
