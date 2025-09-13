@@ -31,7 +31,6 @@
     // Icon Theme
     "catppuccin-icons": true,
     // Syntax Highlighting
-    "ruby": true,
     "dockerfile": true,
     "docker-compose": true,
     "toml": true,
