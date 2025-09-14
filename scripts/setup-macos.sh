@@ -111,6 +111,23 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # Set delay until repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# Disable ⌘ + Space for "Show Spotlight search"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '<dict><key>enabled</key><false/></dict>'
+
+# Disable ⌥ + ⌘ + Space for "Show Finder search window"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 '<dict><key>enabled</key><false/></dict>'
+
+# ----------------------------------------------------------------
+# Mouse & Trackpad
+# ----------------------------------------------------------------
+echo "- 🖱️ Mouse & 🖥️ Trackpad"
+
+# Set mouse speed
+defaults write NSGlobalDomain com.apple.mouse.scaling -float "2"
+
+# Set trackpad speed
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float "2"
+
 # ----------------------------------------------------------------
 # Killall
 # ----------------------------------------------------------------
