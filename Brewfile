@@ -114,6 +114,9 @@ cask "karabiner-elements"
 # a purpose-built tool for planning and building products https://linear.app/homepage
 cask "linear-linear"
 
+# Logicool Options+ https://www.logicool.co.jp/ja-jp/software/logi-options-plus.html
+cask "logi-options+"
+
 # Knowledge base that works on top of a local folder of plain text Markdown files https://obsidian.md/
 cask "obsidian"
 
