@@ -5,3 +5,13 @@
 .zsh_sessions
 .zcompcache
 .zcompdump
+
+# ssh
+**/.ssh/known_hosts*
+
+# 1Password
+**/1Password
+**/op
+
+# zed
+**/zed/prompts/**
