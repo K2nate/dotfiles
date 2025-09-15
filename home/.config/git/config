@@ -3,6 +3,9 @@ name = K2nate
 email = 52069441+K2nate@users.noreply.github.com
 signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHsGQXDh3vukiqiSyiP5TKQOcxqqceIlr27Mrypn0DXi
 
+[init]
+defaultBranch = main
+
 [ghq]
 user = K2nate
 root = ~/src
