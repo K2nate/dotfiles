@@ -10,7 +10,7 @@ macos-icon = xray
 macos-option-as-alt = true
 
 # Theme
-theme=GitHub-Dark-Dimmed
+theme = GitHub Dark Dimmed
 
 # Font
 font-family = "Hack Nerd Font"
