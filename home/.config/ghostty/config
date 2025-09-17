@@ -5,9 +5,8 @@
 # https://ghostty.zerebos.com/
 
 # macOS
-# https://zenn.dev/kawarimidoll/articles/5f219b4409424b
-macos-icon = xray
 macos-option-as-alt = true
+background-opacity = 0.8
 
 # Theme
 theme = GitHub Dark Dimmed
@@ -18,5 +17,10 @@ font-size = 14
 # turn off ligature https://ghostty.org/docs/config/reference#font-feature
 font-feature = -calt, -liga, -dlig
 
+# Quick Terminal
+quick-terminal-position = top
+quick-terminal-size = 50%,50%
+
 # keybindings
 keybind = shift+enter=text:\n
+keybind = global:cmd+backquote=toggle_quick_terminal
