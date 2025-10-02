@@ -41,6 +41,7 @@
     "toml": true,
     "make": true,
     "prisma": true,
+    "sql": true,
     "biome": true
   },
 
