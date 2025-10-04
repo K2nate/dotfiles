@@ -74,6 +74,9 @@ brew "grep"
 # Lightweight and flexible command-line JSON processor https://stedolan.github.io/jq/
 brew "jq"
 
+# Open source MCP server for databases https://github.com/googleapis/genai-toolbox
+brew "mcp-toolbox"
+
 # Dev Tools Management  https://mise.jdx.dev/
 brew "mise"
 
