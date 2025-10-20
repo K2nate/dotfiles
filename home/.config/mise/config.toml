@@ -1,6 +1,6 @@
 [tools]
 node = '24'
-deno = '2.5.0'
+deno = '2.5.4'
 bun = '1.2.22'
 'npm:pnpm' = '10.17.0'
 'npm:@anthropic-ai/claude-code' = '2.0.22'
