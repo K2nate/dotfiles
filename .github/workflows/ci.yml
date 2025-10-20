@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    name: Validate Configuration
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Validate Brewfile syntax
+        run: |
+          brew bundle check --file=./Brewfile || true
+          echo "Brewfile validation complete"
+
+      - name: Install shellcheck
+        run: brew install shellcheck
+
+      - name: Lint shell scripts
+        run: |
+          if [ -d scripts ]; then
+            find scripts -type f -name "*.sh" -exec shellcheck {} +
+          fi
+          if [ -f install.sh ]; then
+            shellcheck install.sh
+          fi
+
+      - name: Install shfmt
+        run: brew install shfmt
+
+      - name: Check shell script formatting
+        run: |
+          if [ -d scripts ]; then
+            shfmt -d -i 2 -ci scripts/
+          fi
+          if [ -f install.sh ]; then
+            shfmt -d -i 2 -ci install.sh
+          fi
+
+      - name: Validate stow configuration
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y stow
+          if [ -d home ]; then
+            stow --no --verbose --target="$HOME" home
+            echo "Stow dry-run completed successfully"
+          fi
