@@ -41,7 +41,7 @@ request_admin_privileges() {
       sleep 60
       kill -0 "$$" || exit
     done
-  ) 2> /dev/null &
+  ) 2>/dev/null &
 }
 
 # This function installs the Xcode Command Line Tools if they are not already installed.
@@ -54,16 +54,16 @@ install_xcode_cli_tools() {
   echo "- 👨🏻‍🚀 Checking Xcode CLI tools..."
 
   # Check if Xcode CLI tools are already installed by trying to print the SDK path.
-  if xcode-select -p &> /dev/null; then
+  if xcode-select -p &>/dev/null; then
     echo "- 👨🏻‍🚀 Xcode CLI tools are already installed"
   else
     echo "- 👨🏻‍🚀 Xcode CLI tools not found. Installing them..."
     TEMP_FILE="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
     touch "${TEMP_FILE}"
 
-    CLI_TOOLS=$(softwareupdate -l \
-      | grep "\*.*Command Line" \
-      | tail -n 1 | sed 's/^[^C]* //')
+    CLI_TOOLS=$(softwareupdate -l |
+      grep "\*.*Command Line" |
+      tail -n 1 | sed 's/^[^C]* //')
 
     echo "- 👨🏻‍🚀 Installing: ${CLI_TOOLS}"
     softwareupdate -i "${CLI_TOOLS}" --verbose
@@ -99,13 +99,13 @@ install_homebrew() {
 
   # Bundle packages from Brewfile (common for macOS & Linux)
   # clone K2nate/dotfiles via ghq to exec brew bundle
-  brew install ghq && \
-    export GHQ_ROOT="$HOME/src" && \
-    ghq get K2nate/dotfiles && \
-    DOTFILES_DIR=$(ghq root)/$(ghq list | grep K2nate/dotfiles) && \
-    cd "$DOTFILES_DIR" && \
+  brew install ghq &&
+    export GHQ_ROOT="$HOME/src" &&
+    ghq get K2nate/dotfiles &&
+    DOTFILES_DIR=$(ghq root)/$(ghq list | grep K2nate/dotfiles) &&
+    cd "$DOTFILES_DIR" &&
     echo -e "🍺 Installing packages from Brewfile"
-    brew bundle \
+  brew bundle \
     --verbose \
     --cleanup \
     --file="$DOTFILES_DIR/Brewfile"

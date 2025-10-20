@@ -143,5 +143,4 @@ killall Finder
 killall Dock
 killall SystemUIServer
 
-
 echo "💻 MacOS setup is complete 🎉"
