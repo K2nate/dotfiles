@@ -26,7 +26,7 @@ request_admin_privileges() {
       sleep 60
       kill -0 "$$" || exit
     done
-  ) 2> /dev/null &
+  ) 2>/dev/null &
 }
 
 request_admin_privileges
