@@ -53,11 +53,17 @@ brew "shfmt"
 # Cat(1) clone with syntax highlighting and Git integration. https://github.com/sharkdp/bat
 brew "bat"
 
+tap "FelixKratz/formulae"
+brew "FelixKratz/formulae/borders"
+
 # Modern replacement for ls. https://github.com/eza-community/eza
 brew "eza"
 
 # Fuzzy finder for the command-line https://github.com/junegunn/fzf
 brew "fzf"
+
+# Interact with Google Gemini AI models from the command-line https://github.com/google-gemini/gemini-cli
+brew "gemini-cli"
 
 # GitHub command-line tool. https://github.com/cli/cli
 brew "gh"
@@ -83,6 +89,9 @@ brew "mise"
 # Search tool like grep and The Silver Searcher https://github.com/BurntSushi/ripgrep
 brew "ripgrep"
 
+# Terminal multiplexer https://tmux.github.io/
+brew "tmux"
+
 # ----------------------------------------------------------------
 # Cask
 # ----------------------------------------------------------------
@@ -92,6 +101,10 @@ cask "1Password"
 
 # Command-line helper for the 1Password password manager https://developer.1password.com/docs/cli
 cask "1password-cli"
+
+# AeroSpace is an i3-like tiling window manager for macOS https://github.com/nikitabobko/AeroSpace
+tap "nikitabobko/tap"
+cask "nikitabobko/tap/aerospace"
 
 # A Real Design-first API Development Platform https://apidog.com/
 cask "apidog"
@@ -105,8 +118,20 @@ cask "arc"
 # Anthropic's official Claude AI desktop app https://www.anthropic.com/
 cask "claude"
 
+# Terminal-based AI coding assistant https://www.anthropic.com/claude-code
+cask "claude-code"
+
+# OpenAI's coding agent that runs in your terminal https://github.com/openai/codex
+cask "codex"
+
 # Voice and text chat software. https://discord.com
 cask "discord"
+
+# Set of tools to manage resources and applications hosted on Google Cloud https://cloud.google.com/cli/
+cask "gcloud-cli"
+
+# Web browser https://www.google.com/chrome
+cask "google-chrome"
 
 # Client for the Google Drive storage service https://www.google.com/drive/
 cask "google-drive"
@@ -129,8 +154,14 @@ cask "orbstack"
 # Control your tools with a few keystrokes https://raycast.app/
 cask "raycast"
 
+# Screenshot measurement and annotation tool https://shottr.cc/
+cask "shottr"
+
 # Team communication and collaboration software. https://slack.com
 cask "slack"
+
+# Native GUI tool for relational databases https://tableplus.com/
+cask "tableplus"
 
 # Open-source code editor. https://code.visualstudio.com
 cask "visual-studio-code"
@@ -140,3 +171,18 @@ cask "zed"
 
 # Video communication and virtual meeting platform https://www.zoom.us/
 cask "zoom"
+
+# ----------------------------------------------------------------
+# Mas
+#
+# Search `mas search <app_name>`
+# info   `mas info <app_id>`
+# ----------------------------------------------------------------
+
+# Simple command line interface for the Mac App Store. https://github.com/mas-cli/mas
+brew "mas"
+
+# Interface for reading and syncing eBooks. https://www.amazon.com/gp/digital/fiona/kcp-landing-page
+# mas "Kindle", id: 302584613
+
+mas "Toggl Track: Hours & Time Log", id: 1291898086
