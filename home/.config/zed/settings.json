@@ -16,25 +16,23 @@
   "buffer_font_size": 14,
   "buffer_font_features": {
     // Disable ligatures
-    "calt": false
+    "calt": false,
   },
 
   // Terminal
   "terminal": {
-    "font_family": "Hack Nerd Font"
+    "font_family": "Hack Nerd Font",
   },
 
   // Tabs
   "tabs": {
     "git_status": true,
-    "file_icons": true
+    "file_icons": true,
   },
 
   // Extensions
   "auto_install_extensions": {
-    // Icon Theme
     "catppuccin-icons": true,
-    // Syntax Highlighting
     "git-firefly": true,
     "dockerfile": true,
     "docker-compose": true,
@@ -42,19 +40,13 @@
     "make": true,
     "prisma": true,
     "sql": true,
-    "biome": true
-  },
-
-  "lsp": {
-    "biome": {
-      "settings": {
-        // Enable biome only when biome.json is present
-        "require_config_file": true
-      }
-    }
+    "rainbow-csv": true,
   },
 
   "agent": {
-    "use_modifier_to_send": true
-  }
+    "use_modifier_to_send": true,
+  },
+  "git_panel": {
+    "sort_by_path": true,
+  },
 }
