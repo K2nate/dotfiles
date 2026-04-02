@@ -9,6 +9,9 @@ macos-option-as-alt = true
 
 # Theme
 theme = GitHub Dark Dimmed
+background-opacity=0.9
+background-blur=true
+unfocused-split-opacity=0.3
 
 # Font
 font-family = "Hack Nerd Font"
