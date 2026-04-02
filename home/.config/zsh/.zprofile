@@ -11,6 +11,9 @@ homebrew() {
 }
 homebrew
 
+# mise (shims for non-interactive use)
+eval "$(mise activate zsh --shims)"
+
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 # shellcheck disable=SC1090
