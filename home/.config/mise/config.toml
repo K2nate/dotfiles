@@ -1,6 +1,6 @@
 [tools]
 node = '24'
-deno = '2.9.2'
+deno = '2.9.3'
 bun = '1.3.14'
 'npm:pnpm' = '10.34.5'
 'npm:@playwright/cli' = '0.1.17'
