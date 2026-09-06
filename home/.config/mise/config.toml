@@ -7,7 +7,7 @@ bun = '1.4.0'
 python = '3.14.7'
 uv = '0.12.9'
 go = '1.27.1'
-rust = '1.98.0'
+rust = '1.98.1'
 
 [hooks]
 # FIXME: corepack would be removed from Node.js https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack
