@@ -5,7 +5,7 @@ bun = '1.4.3'
 'npm:pnpm' = '10.34.7'
 'npm:@playwright/cli' = '0.1.22'
 python = '3.15.1'
-uv = '0.13.4'
+uv = '0.13.5'
 go = '1.27.3'
 rust = '1.99.1'
 
